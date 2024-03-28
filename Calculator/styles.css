@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Abel", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+body {
+    background-size: 100%;
+    background: url(./assets/bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+@media (max-width:715px) {
+    h1 {
+        display: none;
+    }
+}
+
+.calculator {
+    margin-top: 3%;
+    margin-right: 30%;
+    margin-bottom: 3%;
+    max-width: 250px;
+    background: rgb(20, 20, 20);
+    border-radius: 9px 9px;
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 0;
+    gap: 0.3em;
+    margin: 0;
+    border-radius: 0 0 9px 9px;
+    padding: 0.55em .4em .4em .4em;
+    background-color: rgb(39, 36, 36);
+}
+
+.display {
+    height: 120px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 9px 9px 0 0;
+    border-bottom: .3em solid white;
+}
+
+.calc-numbers {
+    border-radius: 9px 9px 0 0;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 3em;
+    border: 0;
+    padding: 1em .3em 0 .3em;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    font-size: 1.7em;
+    height: 1.8em;
+    border: none;
+    color: white;
+    background-color: rgba(102, 51, 0, 0.594);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(102, 51, 0);
+}
+
+.clear.ac{
+    grid-column: span 2;
+}
+.zero{
+    grid-column: span 3;
+}
+
+.clear {
+    background-color: #a79e8477;
+}
+
+.fa-delete-left{
+    color: white;
+    font-size: 1em;
+}
+
+.clear:hover {
+    background-color: #a79e84;
+}
+
+.operator1 {
+    background-color: rgba(255, 179, 102, 0.642);
+}
+
+.operator1:hover {
+    background-color: rgb(255, 179, 102);
+}
+
+.equal {
+    background: rgb(36, 18, 0);
+    background-image: linear-gradient(180deg, rgb(240, 164, 22), rgb(252, 203, 26));
+}
+
+.equal:hover {
+    background-image: linear-gradient(180deg, rgb(240, 113, 22), rgb(252, 98, 26));
+}
