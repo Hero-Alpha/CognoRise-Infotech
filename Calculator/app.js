@@ -1,5 +1,3 @@
-//this is practically the exact code that Brian Holt wrote on the Front End Masters course
-
 let currentTotal = 0; 
 let buffer = "0"; 
 
