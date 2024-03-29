@@ -44,6 +44,7 @@ h1 {
     max-width: 250px;
     background: rgb(20, 20, 20);
     border-radius: 9px 9px;
+    box-shadow: 0 0 2.5em rgb(85, 31, 13);
 }
 
 .calc-buttons {
