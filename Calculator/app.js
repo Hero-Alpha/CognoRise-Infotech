@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let input = document.querySelector('.calc-numbers');
 let buttons = document.querySelectorAll('button');
 
