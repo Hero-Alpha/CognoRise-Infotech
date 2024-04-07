@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let input = document.querySelector('.calc-numbers');
 let buttons = document.querySelectorAll('button');
 
@@ -27,4 +26,9 @@ arr.forEach(button => {
             input.value = inputString;
         }
     })
+<<<<<<< HEAD
 })
+=======
+})
+
+>>>>>>> bc8fe2fa8e4f4cd693f8d391dd010832afaf1885
