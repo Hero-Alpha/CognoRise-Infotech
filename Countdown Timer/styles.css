@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/yy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title{
+    margin-right: 30px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+
+.box {
+    height: 62vh;
+    width: 400px;
+    border-radius: .9rem;
+    background-color: rgba(0, 0, 0, 0.383);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#display {
+    height: 15vh;
+    padding: 1rem;
+    line-height: 10vh;
+    text-align: center;
+    border-radius: .85rem .85rem 0 0;
+    background-color: rgba(120, 120, 120, 0.383); 
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+.box form {
+    width: 100%;
+    height: 32vh;
+    line-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+form input {
+    text-align: center;
+    color: #777777;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 7rem;
+    margin: 2px;
+    margin-bottom: 15px;
+    background: inherit;
+    font-size: 3rem;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.box form input::placeholder {
+    font-size: 1.4rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.box .button {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.184); 
+    border-radius: 0 0 .85rem .85rem;
+}
+
+.box .button button {
+    width: 6rem;
+    cursor: pointer;
+    border-radius: .6rem;
+    padding: 5px 10px;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    background: transparent;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;   
+}
+
+
+.box .button button:disabled {
+  pointer-events: none;
+}
+
+.box .button button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.box .button button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+/* @media(max-width:400px){
+    #second{
+        width:95% ;
+    }
+    #hour{
+        width: 45%;
+    }
+    #minute{
+        width: 45%;
+    }
+}
+@media(max-width:366px){
+    #second{
+        width:95% ;
+    }
+    #hour{
+        width: 95%;
+    }
+    #minute{
+        width: 95%;
+    }
+} */
